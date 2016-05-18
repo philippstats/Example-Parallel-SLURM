@@ -1,26 +1,26 @@
 # Example-Parallel-SLURM
  Example Code for Parallel Batch Jobs using BatchJobs and BatchExperiments on LRZ Linux-Cluster 
 
-## First step: "personalise" code 
+## First step: 
 
+* Login to LRZ
+* Clone repo: `git clone https://github.com/philippstats/Example-Parallel-SLURM.git`
 * In bmr.R adjust setwd in line 6.
 * In lrz_parallel.tmpl update the email in line 38. 
 
 ## Second step: 
 
-* Login to LRZ
-* Clone repo: `git clone https://github.com/philippstats/Example-Parallel-SLURM.git`
 * Start Jobs typing: `Rscript bmr.R`
 * Get status using one of the following: 
    + `Rscript get_status.R`
    + `squeue -u $USER --clusters=mpp2` (tip of the day: make an alias in your .profile)
 * Takes approx. 7 minutes after starting
 
-## Third step: get results
+## Third step: 
 
 * `Rscript get_results.R`
 
-## Result
+### Result should look like this:
 
 ```
 > getJobInfo(reg)
