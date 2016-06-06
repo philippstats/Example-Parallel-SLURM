@@ -84,6 +84,6 @@ ids_parallel = 1:2
 ids_serial = 3
 
 messagef("Submitting %s:", ids_parallel)
-submitJobs(reg, ids_parallel, resources = list(walltime = 60L*60L*0.2, memory = 1000L, ntasks = 2, cpuspertask = 10))
+submitJobs(reg, ids_parallel, resources = list(walltime = 60L*60L*0.2, memory = 1000L, ntasks = 28))
 messagef("Submitting %s:", ids_serial)
-submitJobs(reg, ids = ids_serial, resources = list(walltime = 60L*60L*0.2, memory = 1000L, ntasks = 1, cpuspertask = 1))
+submitJobs(reg, ids = ids_serial, resources = list(walltime = 60L*60L*0.2, memory = 1000L, ntasks = 1))
