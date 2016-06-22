@@ -3,8 +3,6 @@
 library(mlr)
 library(BatchExperiments)
 
-setwd("/home/hpc/ua341/di25kaq/Example-Parallel-SLURM/")
-
 loadConfig()
 getConfig()
 unlink("bmrparallel-files/", recursive = TRUE) # CAUTION! ?unlink
