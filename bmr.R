@@ -7,7 +7,6 @@ loadConfig()
 getConfig()
 unlink("bmrparallel-files/", recursive = TRUE) # CAUTION! ?unlink
 
-# probably you don't need Rmpi
 reg = makeExperimentRegistry("bmrparallel", packages = c("mlr", "parallelMap", "Rmpi"), src.files = "defs.R")
 
 #
